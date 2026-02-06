@@ -16,13 +16,14 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://sanfintool-ik32alewo-santhoshini-25s-projects.vercel.app"
+        "https://sanfintool-cl4ozy5ep-santhoshini-25s-projects.vercel.app",
+        "https://sanfintool-ik32alewo-santhoshini-25s-projects.vercel.app",
+        "https://sanfintool-c8q4uskrj-santhoshini-25s-projects.vercel.app",
+        "https://*.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"],
-)
-
+    allow_headers=["*"],)
 @app.get("/")
 def root():
     return {"status": "Backend is running"}
